@@ -35,8 +35,6 @@ export default class ImageGallery extends Component {
     modalData: { img: DefaultImg, tags: '' },
   };
 
-  // перевіряємо, щоб в пропсах змінився запит
-  // y static відсутній this, тому дублюємо в state - search: ''
   static getDerivedStateFromProps(nextProps, prevState) {
     if (prevState.value !== nextProps.value) {
       return { page: 1, value: nextProps.value };
@@ -48,11 +46,11 @@ export default class ImageGallery extends Component {
     const { page } = this.state;
     const prevValue = prevProps.value;
     const nextValue = this.props.value;
-    //   страхуємо від повторного запиту, якщо вже таке слово було введене
+
     if (prevValue !== nextValue || prevState.page !== page) {
       this.setState({ status: Status.PENDING });
 
-      // перевіряємо чи є помилка, якщо є - записуємо null
+      // error check
       if (this.state.error) {
         this.setState({ error: null });
       }
@@ -88,7 +86,7 @@ export default class ImageGallery extends Component {
       this.state;
 
     if (status === 'idle') {
-      return <InitialStateGallery text="Let`s find images together!" />;
+      return <InitialStateGallery text="FINDING IMAGES" />;
     }
     if (status === 'pending') {
       return <Loader />;

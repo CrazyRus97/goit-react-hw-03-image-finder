@@ -1,4 +1,4 @@
-import errorImage from 'assets/error-1.png';
+import errorImage from 'assets/error.png';
 import { ErrorImg, Text, Wrapper } from './ImageErrorView.styled';
 import PropTypes from 'prop-types';
 

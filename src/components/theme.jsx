@@ -2,17 +2,17 @@ export const theme = {
   colors: {
     black: '#000',
     white: '#fff',
-    text: '#356859',
+    text: '#090430',
     background: '#FFFBE6',
     primary: '#37966F',
-    secondary: '#B9E4C9',
-    accent: '#FD5523',
+    secondary: '#ffefdb',
+    accent: '#ff920b',
     muted: '#FFFBE6',
   },
   space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
   fonts: {
     body: 'system-ui, sans-serif',
-    heading: 'Delicious Handrawn, cursive;',
+    heading: 'Delicious Handrawn;',
     monospace: 'Menlo, monospace',
   },
   fontSizes: {
@@ -40,7 +40,7 @@ export const theme = {
     round: '50%',
   },
   shadows: {
-    textShadow: '0 1px 1px #fff',
-    boxShadow: 'rgb(0 0 0 / 24%) 10px 10px 5px 0px',
+    textShadow: '0 0px 0px #fff',
+    boxShadow: 'rgb(0 0 0 / 24%) 3px 3px 2px 0px',
   },
 };
