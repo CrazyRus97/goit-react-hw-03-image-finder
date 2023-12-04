@@ -41,19 +41,8 @@ export default class Modal extends Component {
   render() {
     const { largeImageURL, tags } = this.props.modalData;
 
-//     return createPortal(
-//       <ModalBackdrop onClick={this.handleBackdropeClick}>
-//         <ModalContent>
-//           <ModalPicture src={largeImageURL} alt={tags} />
-//           <ModalDescr>{tags}</ModalDescr>
-//         </ModalContent>
-//       </ModalBackdrop>,
-//       modalRoot
-//     );
-//   }
-// }
     
-        return (
+    return (
       <ModalBackdrop onClick={this.handleBackdropeClick}>
         <ModalContent>
           <ModalPicture src={largeImageURL} alt={tags} />
