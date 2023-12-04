@@ -40,7 +40,7 @@ export const theme = {
     round: '50%',
   },
   shadows: {
-    textShadow: '0 0px 0px #fff',
+    textShadow: '0px 0px 0px 0px #fff',
     boxShadow: 'rgb(0 0 0 / 24%) 3px 3px 2px 0px',
   },
 };
