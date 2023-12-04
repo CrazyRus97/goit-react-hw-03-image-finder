@@ -7,8 +7,6 @@ import {
   ModalPicture,
 } from './Modal.styled';
 
-const modalRoot = document.querySelector('#modal-root');
-
 export default class Modal extends Component {
   static propTypes = {
     modalData: PropTypes.shape({
